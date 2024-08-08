@@ -1,0 +1,225 @@
+@charset "utf-8";
+body{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 대림산업 목업 애니메이션 */
+#section2 .inner .all_wrap2 .imgbox_sec2>img.on{
+    border-radius: 32px;
+    width: 100%;
+    
+    animation: img_cover_ani 1s 0.5s ease-in-out forwards;
+}
+#section2 .inner .all_wrap2 .imgbox_sec2>img{
+    border-radius: 32px;
+    width: 100%;
+    transform: scale(1.2);
+    opacity: 0;
+}
+@keyframes img_cover_ani {
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+        }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    } 
+}
+/* 대림산업 애니 */
+.right_box2{
+    opacity: 0;
+}
+.right_box2.on{
+    animation: right_ani 1s 0.5s ease-in-out forwards;
+}
+.right_box2 .right_box2_cover.on{
+    transition: all 1s ease-in-out;
+    animation: box2_cover_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes box2_cover_ani {
+    0%{
+        height: 100%;
+        }
+    100%{
+        height: 0;
+    } 
+}
+@keyframes right_ani {
+    0%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+    } 
+}
+/* 제일 엔지니어링 목업 애니 */
+.cheil_img{
+    height: 800px;
+    margin-bottom: -200px;
+    position: relative;
+}
+.cheil_img img{
+    position: absolute;
+    top: 0;
+}
+.cheil_img img.on{
+    opacity: 0;
+    left: -150px;
+    animation: cheil_img_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes cheil_img_ani {
+    0%{
+        opacity: 0;
+        left: -150px;
+        }
+    100%{
+        opacity: 1;
+        left: 0;
+    } 
+}
+
+/* /제일 엔지니어링 오른쪽 박스 애니 */
+.cheil_right{
+    width: 1000px;
+    margin-right: -300px;
+    height: 400px;
+    margin-top: -50px;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+.cheil_right ul{
+    position: absolute;
+    left: 250px;top: 0;
+}
+.cheil_right ul.on{
+    opacity: 0;
+    animation: cheil_right_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes cheil_right_ani {
+    0%{
+        opacity: 0;
+        left: 250px;
+    }
+    100%{
+        opacity: 1;
+        left:55px;
+    } 
+}
+
+/* 라푸마 왼쪽 텍스트박스 */
+.lafuma_left{
+    width: 1000px;
+    margin-right: -300px;
+    height: 600px;
+    position: relative;
+    border: 1px solid #000;
+}
+.lafuma_left ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 60px;top: -10px;
+}
+.lafuma_left.on{
+    opacity: 0;
+    animation: lafuma_left_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes lafuma_left_ani {
+    0%{
+        opacity: 0;
+        left: -250px;
+    }
+    100%{
+        opacity: 1;
+        left:0;
+    } 
+}
+/* 라푸마 목업 */
+.lafuma_img{
+    height: 800px;
+    margin-bottom: -200px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.lafuma_img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.lafuma_img img.on{
+    opacity: 0;
+    /* left: -150px; */
+    animation: lafuma_img_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes lafuma_img_ani {
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+        }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    } 
+}
+/* 누아트 목업 */
+.nuart_img{
+    height: 900px;
+    margin-bottom: -200px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.nuart_img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nuart_img img.on{
+    opacity: 0;
+    /* left: -150px; */
+    animation: lafuma_img_ani 1s 0.5s ease-in-out forwards;
+}
+@keyframes lafuma_img_ani {
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+        }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    } 
+}
+/* 누아트 오른쪽 */
+ul{
+    position: relative;
+    overflow: hidden;
+}
+
+ul .nuart_cover{
+    position: absolute;
+    left: 0;bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #c2c2c2;
+    z-index: 50;
+}
+ul.top .nuart_cover.on{
+    transition: all 1s ease-in-out;
+    animation: nuart_cover_ani 1s 0.5s ease-in-out forwards;
+}
+ul.btt .nuart_cover.on{
+    transition: all 1s ease-in-out;
+    animation: nuart_cover_ani 1s 1.5s ease-in-out forwards;
+}
+@keyframes nuart_cover_ani {
+    0%{
+        height: 100%;
+        }
+    100%{
+        height: 0;
+    } 
+}
