@@ -88,11 +88,11 @@ a{text-decoration: none;}
 #section3{
 }
 #section4{
-    background:linear-gradient(1deg, #9eb5ff 0.44%, #FFF 99.56%)}
+    background:linear-gradient(1deg,#9eb5ff 0%, #fff 50%, #9eb5ff 100%)}
 #section5{
-    background:linear-gradient(1deg, #ff8929 0.44%, #FFF 99.56%);}
+    background:linear-gradient(1deg,  #ffa55b 0%, #fff 50%, #ffa55b 100%);}
 #section6{
-    background: linear-gradient(1deg, #C8C8C8 0.44%, #FFF 99.56%)center top;
+    background: linear-gradient(1deg, #C8C8C8 0%, #fff 50%, #C8C8C8 100%)center top;
 }
 #section7{
     background: url(../images/footer.png)no-repeat center top;
@@ -506,11 +506,15 @@ nav ul li a{
         text-align: center;
         font-family: "S-Core Dream";
         /* font-size: 64px; */
-        padding-bottom: 50px;
-        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-top: 80px;
 }
 #section2 .inner h1 img{
     width: 900px;
+    /* padding: 50px; */
+}
+h1 img{
+    width: 900px !important;
     /* padding: 50px; */
 }
 #section2 .inner .all_wrap2{
